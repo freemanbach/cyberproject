@@ -1,0 +1,10 @@
+#### Task1
+
+* The topic on task 1 is to build a custom binary file to hide some important data
+into this binary file. You can choose to use any system-level programming languages
+such as C/C++/Go/RUST/V/NIM/C#. The text in which you must hide will be
+https://sites.radford.edu/~flo/index.php
+  
+* You can certainly find a optimal method to hide that entire string as a single piece of
+data or break it up into multiple chunks. You can certainly look this up on google to see
+what might be a best approach is hiding data inside a binary file to be run on windows.

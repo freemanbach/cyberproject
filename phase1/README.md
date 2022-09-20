@@ -33,6 +33,10 @@ https://sites.radford.edu/~flo/index.php
 data or break it up into multiple chunks. You can certainly look this up on google to see
 what might be a best approach is hiding data inside a binary file to be run on windows. 
 
+
+Please check out [Task1](https://github.com/freemanbach/cyberproject/blob/main/phase1/task1) documentation. 
+
+
 * [Systems1](#phaseI)
 * [Systems1 basics](#systems1-basics)
 
