@@ -1,8 +1,16 @@
 <?php
 session_start();
 ?>
+<!doctype html>
 <html lang="en">
+<!-- 
+    
+    Hey ANITA, this is not suppose to be 100% copy from my code, Try to add a image to the background or other items.
+    Redo this entire index.html file to what it could be. you can leave my processing code as it, but do something
+    with the color, Background and alignments. 
 
+
+-->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
