@@ -1,0 +1,16 @@
+#### Task3
+
+* The topic on task 3 is to build a system application using any system language of your choosing. This can be
+go/rust/C/C++/V/Nim. We had discussed that there needs to be an algorithm used in this binary code, which will be unlocked
+by an user. The algorithm at which can be used shall be of mathematical type. Fee Free to research a basic 
+Math Algorithm to hide this one word passcode for the next phase, Phase IV.
+
+* The design of this single php webpage can either be elegant or simplistic. The basic requirements
+are to have a special passcode to be mathematically encrypted as a puzzel. The user of this binary file will
+need to decrypt it in order to find the real passcode to unlock the next phase. We could also hide a string inside this binary file
+for the user to find its website as well. 
+
+* so, the final goal will be once the correct decrypted value have been found, we will show the next phase via a link
+inside this binary file. 
+
+* Plese check out [Task3](https://github.com/freemanbach/cyberproject/blob/main/phase3/task3) documentation.
