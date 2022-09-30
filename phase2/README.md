@@ -41,9 +41,21 @@ what might be a best approach is hiding data inside a binary file to be run on w
 
 #### Task2
 
-* [Web1](#phaseII)
-* [Web1 basics](#web1-basics)
+* The topic on task 2 is to build a php webpage which will allow two independently discussed
+vocabularies to be encrypted in such a manner that --an user-- of this application would
+then need to figure out a method to decrypt these two words using a web langauge of choice.
 
+* The design of this single php webpage can either be elegant or simplistic. The basic requirements
+are to have a background image as one of the hints as a theme to each of the encrypted words. Both decrypted
+words must be encrypted all in lowercase and decrypted as such as well. We can also by keeping track of the
+time in which --an user-- spend on that webpage. Once a limit has been set in place and the liit is over,
+we could have a header() to referr the --user-- to another page.This can be done using cookie and/or session.
+
+* so, the final goal will be once the correct decrypted value have been found,we would immediately a link to download
+a binary file to be solved on the next phase. i have yet to decide as to what but we can discuss this in class.
+
+
+* Please check out [Task1](https://github.com/freemanbach/cyberproject/blob/main/phase2/task2) documentation. 
 
 ### Phase III
 
