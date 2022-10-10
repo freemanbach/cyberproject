@@ -3,6 +3,7 @@ session_start();
 ?>
 <!doctype html>
 <html lang="en">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
 <!-- 
     Hey ANITA, this is not suppose to be 100% copy from my code, Try to add a image to the background or other items.
     Redo this entire index.html file to what it could be. you can leave my processing code as it, but do something
@@ -11,7 +12,7 @@ session_start();
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Crack this code</title>
+    <title>Can you crack this code?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
