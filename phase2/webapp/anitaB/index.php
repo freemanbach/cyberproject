@@ -4,11 +4,7 @@ session_start();
 <!doctype html>
 <html lang="en">
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-<!-- 
-    Hey ANITA, this is not suppose to be 100% copy from my code, Try to add a image to the background or other items.
-    Redo this entire index.html file to what it could be. you can leave my processing code as it, but do something
-    with the color, Background and alignments. 
--->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,15 +15,15 @@ session_start();
 
 <body>
     <div>
-        <h2 style = "color :aqua;" >Enter three decrypted words</h2>
+        <h2 style = "color:blue;">Enter three decrypted words</h2>
     </div>
     <div>
         <br><br>
-        <p style = "color: red;" > Here, you are provided with three encrypted strings using AES 256 CBC approach with a random seed of 32, you
+        <p style = "color:red";>Here, you are provided with three encrypted strings using AES 256 CBC approach with a random seed of 32, you
             will provided the decrypted values as such: </p>
-        <p><?php echo $_SESSION['eans1']; ?></p>
-        <p><?php echo $_SESSION['eans2']; ?></p>
-        <p><?php echo $_SESSION['eans3']; ?></p>
+        <p style = "color:blue;"><?php echo "1) ".$_SESSION['eans1']; ?></p>
+        <p style = "color:blue;"><?php echo "2) ".$_SESSION['eans2']; ?></p>
+        <p style = "color:blue;"><?php echo "3) ". $_SESSION['eans3']; ?></p>
     </div>
 
     <div>
@@ -55,7 +51,8 @@ session_start();
             $m = array();
             $m1 = base64_decode("ZnJvZG8=");
             $m2 = base64_decode("c2F1cm9u");
-            array_push($m, $m1, $m2);
+            $m3 = base64_decode("pngvQG8=");
+            array_push($m, $m1, $m2,$m3);
 
             $method = "aes-256-cbc";
             $key = openssl_random_pseudo_bytes(32);
@@ -97,28 +94,28 @@ session_start();
     </div>
 
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-
+            <h2 style = "color: red;">Type the encrypted key answers below for each decrypted values</h2>
         <div class="form-row">
             <div class="form-group col-sm-4">
-                <label for="key1">Key Value 1</label>
+                <label style = "color:blue" for="key1">Key Value 1</label>
                 <input type="text" class="form-control" id="key1" name="key1" placeholder="Enter Answer" maxlength="10"
                     size="10" required autofocus />
             </div>
             <div class="form-row">
                 <div class="form-group col-sm-4">
-                    <label for="key2">Key Value 2</label>
+                    <label style = "color:blue" for="key2">Key Value 2</label>
                     <input type="text" class="form-control" id="key2" name="key2" placeholder="Enter Answer"
                         maxlength="10" size="10" required autofocus />
                 </div>
                 <div class="form-row">
                     <div class="form-group col-sm-4">
-                        <label for="key3">Key Value 3</label>
+                        <label style = "color:blue" for="key3">Key Value 3</label>
                         <input type="text" class="form-control" id="key3" name="key3" placeholder="Enter Answer"
                             maxlength="10" size="10" required />
                     </div>
                 </div>
 
-                <button type="submit" name="submit">Submit</button>
+                <button style = "color:purple;" type="submit" name="submit">Submit</button>
     </form>
 </body>
 
