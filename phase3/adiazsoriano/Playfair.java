@@ -16,13 +16,13 @@ public final class Playfair {
      * @return Returns the encrypted text using the playfair cipher
      */
     public static String playfairEncrypt(String plaintext, String keyPhrase) {
+        if(plaintext.isBlank() || plaintext.isEmpty()) {
+            return "";
+        }
+
         String[] keyBlock = generateKeyBlock(keyPhrase);
         String[] blocks = fillX(chunkText(plaintext));
         String rawCipherText = "";
-
-        if(plaintext.isEmpty()) {
-            return "";
-        }
 
         for(String block : blocks) {
             //
@@ -73,6 +73,9 @@ public final class Playfair {
      * @return Returns the decrypted text using the playfair cipher
      */
     public static String playfairDecrypt(String ciphertext, String keyphrase) {
+        if(ciphertext.isBlank() || ciphertext.isEmpty()) {
+            return "";
+        }
         String[] keyBlock = generateKeyBlock(keyphrase);
         String[] blocks = chunkText(ciphertext);
         String rawPlainText = "";
