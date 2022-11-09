@@ -20,6 +20,10 @@ public final class Playfair {
         String[] blocks = fillX(chunkText(plaintext));
         String rawCipherText = "";
 
+        if(plaintext.isEmpty()) {
+            return "";
+        }
+
         for(String block : blocks) {
             //
             // blockLocation[0] = character 1 (row,column)
@@ -47,7 +51,7 @@ public final class Playfair {
                 if(ch1Row >= keyBlock.length) {
                     ch1Row = 0;
                 }
-                if(ch2Col >= keyBlock.length) {
+                if(ch2Row >= keyBlock.length) {
                     ch2Row = 0;
                 }
             } else { //other cases
