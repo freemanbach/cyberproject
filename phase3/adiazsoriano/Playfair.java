@@ -106,7 +106,7 @@ public final class Playfair {
                 if(ch1Row < 0) {
                     ch1Row = keyBlock.length - 1;
                 }
-                if(ch2Col < 0) {
+                if(ch2Row < 0) {
                     ch2Row = keyBlock.length - 1;
                 }
             } else { //other cases
