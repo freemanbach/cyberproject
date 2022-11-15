@@ -1,0 +1,57 @@
+<?php
+
+// Caesar Cipher PHP code for Github Class Assignment
+// User can input text and can have it run through a Caesar Cipher 
+// Does both Encode and Decode
+// Chris Fischer
+// 11/17/22
+ 
+//Encrypt Function
+function encrypt($text, $shift){
+	//Set result string as empty
+    $result = "";
+	//Read until text is gone
+    for ($i = 0; $i < strlen($text); $i++){
+		//Handle uppercase
+        if (ctype_upper($text[$i]))
+            $result = $result.chr((ord($text[$i]) + $shift - 65) % 26 + 65);
+		//Handle Lower Case
+    else
+        $result = $result.chr((ord($text[$i]) + $shift - 97) % 26 + 97);
+    }
+	//Return value of function
+    return $result;
+}
+
+//Decrypt function
+function decrypt($text,$shift){
+	//Modulo to ensure value is a letter
+	$shift = $shift%26;
+	//Return opposite shift of Encrypt function
+	return encrypt($text, 26 - $shift);
+}
+	
+	
+//Request Prompt to either encrypt or decrypt
+$prompt = readline("encrypt or decrypt?");
+
+//Encrypt input
+if ($prompt == "encrypt"){
+	$text = readline("Enter in text: ");
+	$shift = readline("Enter in shift: ");
+	echo "\n Caesar Cipher is: " . encrypt($text, $shift);
+}
+
+//Decrypt input
+elseif ($prompt == "decrypt"){
+	$text = readline("Enter in text: ");
+	$shift = readline("Enter in shift: ");
+	echo "\n The Caesar Cipher decoded is: " . decrypt($text, $shift);
+}
+
+//handle bad inputs
+else { 
+	echo "Try again";
+}
+
+?>
