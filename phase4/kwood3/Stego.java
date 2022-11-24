@@ -86,7 +86,6 @@ public class Stego {
                 break;
             }
         } catch(IOException exception) {
-            System.out.println("There was an error");
             System.out.println(exception.getMessage());
         }
     }
