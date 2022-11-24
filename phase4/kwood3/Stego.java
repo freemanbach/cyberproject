@@ -39,7 +39,7 @@ public class Stego {
 
                 case "-i":
                 if (i + 1 < args.length) {
-                    Pattern input_pattern = Pattern.compile("^(.+)/([^/]+).png$", Pattern.CASE_INSENSITIVE);
+                    Pattern input_pattern = Pattern.compile("^(.+)/([^/]+).(png|jpg)$", Pattern.CASE_INSENSITIVE);
                     Matcher input_matcher = input_pattern.matcher(args[i + 1]);
                     boolean match_found = input_matcher.find();
                     if (match_found){
