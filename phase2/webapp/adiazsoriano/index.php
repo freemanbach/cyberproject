@@ -24,8 +24,6 @@ session_start();
 
         <div>
             <?php
-
-                $cnt = 1;
                 function encrypt(array $messages, $method, $key, $iv) : array {
                     $em = array();
                     for($i = 0; $i < count($messages); $i++) {
@@ -74,11 +72,11 @@ session_start();
 
                 if ( trim($_POST['key1']) == $_SESSION['dans1'] && trim($_POST['key2']) == $_SESSION['dans2'] ) {
                         $_SESSION["user"] = "player";
-                        $_SESSION["count"] = $cnt++;
+                        $_SESSION["count"]++;
                         correct("yes.php");
                 } else {
                     $_SESSION["user"] = "player";
-                    $_SESSION["count"] = $cnt++;
+                    $_SESSION["count"]++;
                     incorrect("no.php");
                 }
                 }
@@ -97,6 +95,7 @@ session_start();
                         <input type="text" class="form-control" id="key2" name="key2" placeholder="Enter Answer" maxlength="10" size="10" required />
                     </div>
                 </div>
+
                 <button type="submit" name="submit">Submit</button>
             </form>
         </div>
