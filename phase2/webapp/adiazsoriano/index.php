@@ -97,7 +97,6 @@ session_start();
                         <input type="text" class="form-control" id="key2" name="key2" placeholder="Enter Answer" maxlength="10" size="10" required />
                     </div>
                 </div>
-
                 <button type="submit" name="submit">Submit</button>
             </form>
         </div>
