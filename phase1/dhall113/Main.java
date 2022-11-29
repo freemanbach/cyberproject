@@ -4,6 +4,7 @@ public class Main {
 		String two = "sites.radford.edu";
 		String three = "/~flo";
 		String four = "/index.php";
-		String ten = one + two + three + four;
+		String ten = "";
+		ten = one + two + three + four;
 	}
 }
